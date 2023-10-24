@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState,CSSProperties } from 'react';
+import { useState, CSSProperties } from 'react';
 import ClockLoader from "react-spinners/ClockLoader";
 
 const override = {
@@ -7,11 +7,11 @@ const override = {
   margin: "10rem auto",
 };
 
-const Spinner = ()=> {
+const Spinner = () => {
   let [loading, setLoading] = useState(true);
   let [color, setColor] = useState("red");
-    return (
-      <div className='text-center'>
+  return (
+    <div className='text-center'>
       <ClockLoader
         color={color}
         loading={loading}
@@ -20,8 +20,8 @@ const Spinner = ()=> {
         aria-label="Loading Spinner"
         data-testid="loader"
       />
-      </div>
-    )
+    </div>
+  )
 }
 
 export default Spinner
