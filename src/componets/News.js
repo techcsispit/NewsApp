@@ -69,7 +69,7 @@ const News = (props) => {
                     hasMore={articles.length !== totalResults}
                     loader={<Spinner />}
                 >
-                    <div className='container'>
+                    <div className='container'>                          
                         <div className='row my-3'>
                             {articles.map((element, index) => {
                                 return (

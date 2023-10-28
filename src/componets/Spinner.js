@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, CSSProperties } from 'react';
-import ClockLoader from "react-spinners/ClockLoader";
+import loader from './loader.gif'
+// import ClockLoader from "react-spinners/ClockLoader";
 
 const override = {
   display: "block",
@@ -12,14 +13,15 @@ const Spinner = () => {
   let [color, setColor] = useState("red");
   return (
     <div className='text-center'>
-      <ClockLoader
+      {/* <ClockLoader
         color={color}
         loading={loading}
         cssOverride={override}
         size={150}
         aria-label="Loading Spinner"
         data-testid="loader"
-      />
+      /> */}
+      <img src={loader} alt="Loader"  />
     </div>
   )
 }
