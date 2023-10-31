@@ -48,6 +48,7 @@ To get started with the project, follow these steps:
 
 5. **Open the Application:** Visit [http://localhost:3000](http://localhost:3000) in your web browser to use the news app. You can start making changes in the code to see live updates.
 
+6. **API Credentials:** Make sure to know that the api credentials are not present when you clone the project. YOu have to make sure that you use your API credentials inorder to load the news. You can create a .env file and store the credentials as : REACT_APP_NEWS_API_KEY so that your news is loaded. 
 ## Project Structure
 
 The project is structured as follows:
